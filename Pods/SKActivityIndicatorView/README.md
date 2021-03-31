@@ -2,6 +2,8 @@
 
 `SKActivityIndicatorView` is a lightweight and easy-to-use ActivityIndicator for your iOS app written in swift.
 
+![SKActivityIndicatorView](ActivityIndicator.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -15,9 +17,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-- iOS 9.0+
-- Xcode 9.1+
-- Swift 4.0+
+- iOS 13.0+
+- Xcode 11+
+- Swift 5.0+
 
 
 ## Installation
@@ -26,11 +28,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 To integrate SKActivityIndicatorView into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-pod "SKActivityIndicatorView" ~> 0.1.0
+pod 'SKActivityIndicatorView', '~> 1.0.0'
 end
 ```
 
@@ -40,6 +42,13 @@ Then, run the following command:
 $ pod install
 ```
 
+### Carthage
+
+Carthage is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate SKActivityIndicatorView into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```
+github "SachK13/SKActivityIndicatorView" ~> 1.0.0
+```
 
 ### Manual
 You can directly add the `SKActivityIndicatorView.swift` and `SKActivityIndicatorViewStyle.swift` source files into your Xcode project.
@@ -50,7 +59,7 @@ Include SKActivityIndicatorView wherever you need it with `import SKActivityIndi
 
 ## Usage
 
-(see sample Xcode project in `/SKActivityIndicatorView/Example`)
+(see sample Xcode project in `/Example`)
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 Import the module.
@@ -62,6 +71,12 @@ import SKActivityIndicatorView
 Now, you can show only ActivityIndicatorView without status message:
 ```swift
 SKActivityIndicator.show()
+```
+
+
+Display ActivityIndicatorView with status message:
+```swift
+SKActivityIndicator.show("Loading...")
 ```
 
 
@@ -102,5 +117,5 @@ SKActivityIndicator.spinnerStyle(.spinningHalfCircles)
 
 ## License
 
-SKActivityIndicatorView is released under the MIT license. [See LICENSE](https://github.com/SachK13/TestRepo/master/LICENSE) for details.
+SKActivityIndicatorView is released under the MIT license. [See LICENSE](https://github.com/SachK13/SKActivityIndicatorView/blob/master/LICENSE) for details.
 
