@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Gofoodsie/Pods-Gofoodsie-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FaveButton/FaveButton.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/SKActivityIndicatorView/SKActivityIndicatorView.framework
